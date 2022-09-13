@@ -1,0 +1,205 @@
+:root
+{
+    --main-color:#FF9800;
+    --transition-duration:.5s ease-in-out;
+}
+*
+{
+    
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    line-height: 1.8;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+ul{
+    list-style: none;
+    display: inline-block;
+}
+ul li{
+    display: inline-block;
+}
+
+/*  start Landing page  */
+.land-page
+{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../img/3.webp');
+    background-size: cover;
+    position: relative;
+}
+.land-page .overLay
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+.header
+{
+    display: flex;
+    z-index: 2;
+    justify-content:space-between ;
+    padding: 15px;
+    position: relative;
+}
+.header .logo
+{
+    margin: 13px 40px;
+    font-size: 25px ;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--main-color);
+}
+.header ul
+{
+    margin-right: 50px;
+}
+.header ul li
+{
+    padding: 0 20px ;
+    font-size: 17px;
+}
+.header ul li a
+{
+    transition: var(--transition-duration);
+}
+.header ul li a:hover
+{
+    color: var(--main-color);
+}
+.header ul li a.active , span
+{
+    color: var(--main-color);
+}
+.landing-text
+{
+    height: 100%;
+    max-width: 650px;
+    margin: 20% auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.landing-text h1
+{
+    font-size: 33px;
+    font-weight: bold;
+}
+.landing-text p
+{
+    padding: 10px 30px 10px 30px;
+    font-size: 25px;
+}
+/*  End Landing page  */
+/* start setting box  */
+.setting-box
+{
+    position: fixed;
+    top: 200px;
+    left: -300px;
+    min-height: 250px;
+    width: 300px;
+    transition: var(--transition-duration);
+    text-align: center;
+    background-color: rgba(211, 239, 247, 0.466);
+    z-index: 2;
+
+}
+.setting-box .setting-icon
+{
+    height: 30px;
+    width: 30px;
+    background-color:rgba(211, 239, 247, 0.466);
+    position: absolute;
+    transition: var(--transition-duration);
+    right: -30px;
+    top: 0px;
+
+    color: rgb(44, 43, 43);
+    cursor: pointer;
+}
+.setting-box i
+{
+    
+    padding: 5px;
+    font-size: 20px;
+}
+.opened
+{
+    left: 0;
+}
+.setting-box .settingContanier
+{
+    transition: var(--transition-duration);
+}
+.setting-box .setting-color
+{
+    padding: 20px;
+    margin:8px 10px;
+    background-color: rgba(245, 245, 245, 0.575);
+}
+.setting-box .setting-color h4
+{
+    margin: 0;
+    color: #666;
+}
+.setting-box .setting-color .color-list
+{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+
+}
+.setting-box .setting-color .color-list li
+{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: .5;
+    display: inline-block;
+}
+.setting-box .setting-color .color-list li.active
+{
+    opacity: 1;
+    border: 3px solid white;
+}
+.setting-box .setting-color .color-list li:first-child
+{
+    background-color: #FF9800;
+}
+.setting-box .setting-color .color-list li:nth-child(2)
+{
+    background-color: #E91E63;
+}
+.setting-box .setting-color .color-list li:nth-child(3)
+{
+    background-color: #009688;
+
+}
+.setting-box .setting-color .color-list li:nth-child(4)
+{
+    background-color: #03A9F4;
+}
+.setting-box .setting-color .color-list li:nth-child(5)
+{
+    background-color: #4CAF50;
+}
+
+/* End setting box  */
